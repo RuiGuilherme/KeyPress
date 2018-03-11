@@ -1,26 +1,17 @@
 # KeyPress
 Detect key pressed in Textbox WPF
 # MainWindow.xaml:
-<br />
-**_<TextBox x:Name="TextBoxExempleName" Text="{Binding Path=TextBoxExempleBinding}" KeyDown="Testkeys" Grid.Row="1" Margin="5">_**
-<br />
+1. <TextBox x:Name="TextBoxExempleName" Text="{Binding Path=TextBoxExempleBinding}" KeyDown="Testkeys" Grid.Row="1" Margin="5" />
+
 # MainWindow.xaml.cs:
-<br />
-**_private void Testkeys(object sender, KeyEventArgs e)
-{
-<br />
-        //Get x:Name TextBox
-        <br />
-        var TextBox = (TextBox)sender;
-        <br />
-        //Call KeyPress
-        <br />
-        new KeyPress(e);
-        <br />
-        //Assigns the values in the textbox
-        <br />
-        TextBox.Text = KeyPress.Text;
-        <br />
-    }
-    <br />
-}_**
+1. private void Testkeys(object sender, KeyEventArgs e)
+1. {
+1.         //Get x:Name TextBox
+1.         var TextBox = (TextBox)sender;
+1.         //Call KeyPress
+1.         new KeyPress(e);
+1.         //Assigns the values in the textbox
+1.         TextBox.Text = KeyPress.Text;
+1.     }
+1. }
+
